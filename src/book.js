@@ -1,12 +1,12 @@
 function createTitle(title) {
-  return `The ${title}`
+  return `The ${title}`;
 }
 
 function buildMainCharacter(name, age, pronouns) {
   return {
     name: name,
     age: age,
-    pronouns: pronouns
+    pronouns: pronouns,
   };
 }
 
@@ -31,8 +31,7 @@ function writeBook(title, mainCharacter, genre) {
 
 function editBook(book) {
   book.pageCount = book.pageCount * 0.75;
-  return book.pageCount
-  //why doesn't returning book.pageCount * 0.75 work?
+  return book.pageCount;
 }
 
 module.exports = {
